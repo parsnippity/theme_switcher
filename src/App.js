@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import MainContent from "./components/MainContent";
+import { useContext, useState } from "react";
+import ThemeContext from "./Context";
 
-function App() {
+const App = () => {
+  const [theme, setTheme] = useState("light");
+  const setDarkTheme = () => {
+    setTheme("dark");
+  }
+  const setLightTheme = () => {
+    setTheme("light");
+  }
+  const setBlueTheme = () => {
+    setTheme("blue");
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeContext.Provider value={{setDarkTheme, setLightTheme, setBlueTheme, theme}}>
+        <Content/>
+    </ThemeContext.Provider>
+  )
 }
 
-export default App;
+const Content = () => {
+  const {theme} = useContext(ThemeContext);
+  return (
+    <div className={theme}>
+      <Header/>
+      <Navbar/>
+      <MainContent/>
+      <Footer/>
+    </div>
+  )
+}
+
+export default App

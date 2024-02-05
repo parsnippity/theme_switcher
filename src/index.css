@@ -1,0 +1,195 @@
+.dark {
+    background-color: black;
+    color: whitesmoke;
+}
+.dark #header, .dark button {
+    background-color: darkslategray;
+}
+
+.dark #header {
+    border-bottom: 0.125em solid whitesmoke;
+}
+
+.dark button {
+    border: 0.125em solid whitesmoke;
+    font-size: large;
+    color: whitesmoke;
+}
+
+.dark #footer {
+    border-top: 0.125em solid whitesmoke;
+}
+
+.dark #mainContent h2 {
+    border-bottom: 0.125em solid whitesmoke;
+}
+
+.dark a {
+    color: mediumaquamarine;
+}
+
+.light #header, .light button {
+    background-color: skyblue;
+}
+
+.light #header {
+    border-bottom: 0.125em solid black;
+}
+
+.light button {
+    border: 0.125em solid black;
+    font-size: large;
+    color: black;
+}
+
+.light #footer {
+    border-top: 0.125em solid black;
+}
+
+.light #mainContent h2 {
+    border-bottom: 0.125em solid black;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.light a {
+    color: darkcyan;
+}
+
+.blue {
+    background-color: midnightblue;
+    color: lightblue;
+}
+
+.blue #header, .blue button {
+    background-color: royalblue;
+}
+
+.blue #header {
+    border-bottom: 0.125em solid lightblue;
+}
+
+.blue button {
+    border: 0.125em solid lightblue;
+    font-size: large;
+    color: lightblue;
+}
+
+.blue #footer {
+    border-top: 0.125em solid lightblue;
+}
+
+.blue #mainContent h2 {
+    border-bottom: 0.125em solid lightblue;
+}
+
+.blue a {
+    color: orchid;
+}
+
+.dark, .light, .blue {
+    min-height: 100vh;
+}
+
+#introTitle {
+    margin-top: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+#header button {
+    height: fit-content;
+    margin: 1rem;
+}
+
+#header div {
+    display: flex;
+    align-items: baseline;
+}
+
+#footer p {
+    margin-bottom: 0px;
+    padding-bottom: 1em;
+}
+
+#patterns img {
+    height: 10rem;
+    width: 10rem;
+    object-fit:cover;
+}
+
+#patterns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#patterns a {
+    margin: 1rem;
+}
+
+#stitches {
+    display: flex;
+}
+
+#stitches div {
+    padding: 0.25em;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#navbar a {
+    margin: 0.25em;
+}
+
+a p {
+    text-decoration: none;
+}
+
+.dark a p {
+    color: white;
+}
+
+.light a p {
+    color: black;
+}
+
+.blue a p {
+    color: lightblue;
+}
+
+#intro p {
+    font-size: large;
+}
+
+#intro, #stitches, #patterns {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#stitchTitle {
+    margin-bottom: 0;
+}
